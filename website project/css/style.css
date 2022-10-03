@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+}
+/*navigation bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#logo{
+    margin: 10px 20px ;
+
+}
+#logo img{
+    height: 80px ;
+    width: auto;
+ margin:  10px 20px;
+ border-radius: 35px;
+}
+#navbar ul{
+    display: flex;/*row wise arrangement*/
+    font-family: 'Bree Serif', serif;
+}
+#navbar::before{/*covers the naviation bar*/
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;/*content on top of before*/
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;/*no dots in list*/
+    font-size: 1.6rem;
+   
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 425px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before
+{
+    content: "";
+    background: url('../bg.png') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;/*content on top of before*/
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    text-align: center;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+}
+#home p{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;/*relative to html*/
+    font-family: 'Bree Serif', serif;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+
+
+/*reusable headings classes*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    color: white;
+    font-family: 'Baloo 2', cursive;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    
+}
+.btn{
+    padding: 5px 12px;
+    border: 1px solid white;
+    color: white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.table{
+    text-align: left;
+    color: white;
+    font-size: 1.2rem;/*relative to html*/
+    font-family: 'Bree Serif', serif;  
+}
